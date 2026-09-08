@@ -2,7 +2,6 @@ Iris Flower Classification 🌸
 
 A machine learning project that classifies Iris flowers into one of three species — Setosa, Versicolor, or Virginica — based on four physical measurements. Built as a foundational, end-to-end classification project: data loading, exploratory analysis, preprocessing, model comparison, evaluation, and prediction.
 
-Show Image Show Image Show Image
 
 Problem Statement
 
@@ -31,13 +30,6 @@ SVM (best)	~1.00
 
 (Exact numbers can vary slightly depending on the random train/test split seed.)
 
-Confusion Matrix (best model):
-
-Show Image
-
-Feature relationships by species:
-
-Show Image
 
 Note: Iris is a small, well-separated dataset, so near-perfect accuracy is expected here — this project demonstrates a clean end-to-end ML workflow rather than performance on a hard, real-world problem.
 
@@ -69,7 +61,7 @@ How to Run
 Clone the repo and install dependencies:
 
 bash
-git clone https://github.com/<hrithika2005119>/iris-flower-classification.git
+git clone https://github.com/hrithika2005119/CodeAlpha-Iris-Flower-Classification.git
 cd iris-flower-classification
 pip install -r requirements.txt
 
