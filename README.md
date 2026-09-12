@@ -2,7 +2,6 @@ Iris Flower Classification 🌸
 
 A machine learning project that classifies Iris flowers into one of three species — Setosa, Versicolor, or Virginica — based on four physical measurements. Built as a foundational, end-to-end classification project: data loading, exploratory analysis, preprocessing, model comparison, evaluation, and prediction.
 
-
 Problem Statement
 
 Given a flower's sepal length, sepal width, petal length, and petal width, can a model reliably predict which of three Iris species it belongs to? This is a classic multi-class classification problem, used here to demonstrate core ML fundamentals — train/test splitting, feature scaling, model comparison, and evaluation metrics.
@@ -30,6 +29,11 @@ SVM (best)	~1.00
 
 (Exact numbers can vary slightly depending on the random train/test split seed.)
 
+Confusion Matrix (best model):
+images/confusion_matrix.png
+
+Feature relationships by species:
+images/pairplot.png
 
 Note: Iris is a small, well-separated dataset, so near-perfect accuracy is expected here — this project demonstrates a clean end-to-end ML workflow rather than performance on a hard, real-world problem.
 
@@ -38,52 +42,24 @@ iris-flower-classification/
 |-- README.md
 |-- requirements.txt
 |-- .gitignore
-|
-|-- data/
-|   `-- Iris.csv
-|
-|-- notebooks/
-|   `-- iris_classification.ipynb
-|
-|-- src/
-|   `-- predict.py
-|
-|-- models/
-|   |-- iris_model.pkl
-|   |-- scaler.pkl
-|   `-- label_encoder.pkl
-|
-`-- images/
-    |-- pairplot.png
-    `-- confusion_matrix.png
+|-- data/Iris.csv
+|-- notebooks/iris_classification.ipynb
+|-- src/predict.py
+|-- models/ (iris_model.pkl, scaler.pkl, label_encoder.pkl)
+`-- images/ (pairplot.png, confusion_matrix.png)
 How to Run
-
-Clone the repo and install dependencies:
-
 bash
-git clone https://github.com/hrithika2005119/CodeAlpha-Iris-Flower-Classification.git
-cd iris-flower-classification
+git clone https://github.com/hrithika2005119/Iris-Flower-Classification.git
+cd Iris-Flower-Classification
 pip install -r requirements.txt
-
-Run a prediction using the already-trained model:
-
-bash
 python src/predict.py
-
-Or open notebooks/iris_classification.ipynb in Jupyter/Colab to see the full workflow — data loading through training and evaluation.
-
 Tech Stack
 Language: Python 3
 Data handling: pandas, numpy
 Visualization: matplotlib, seaborn
 ML modeling: scikit-learn
 Model persistence: joblib
-Development: Google Colab (exploration & training) → VS Code (packaging & GitHub)
-Future Improvements
-Deploy as an interactive Streamlit or Flask app
-Add hyperparameter tuning with GridSearchCV
-Add a REST API endpoint for predictions
-Add more src/ scripts (train.py, evaluate.py) for a fully modular pipeline
+Development: Google Colab → VS Code
 Author
 
-Hrithika
+Hrithika V
